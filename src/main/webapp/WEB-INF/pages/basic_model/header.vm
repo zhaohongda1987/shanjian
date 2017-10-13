@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Glaring Sword</title>  
+    <link href="/shanjian/resources/css/main.css" rel="stylesheet" />
+    <!-- layui -->
+    <link href="/shanjian/resources/js/layer/css/layui.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="nav">
+	<ul class="layui-nav layui-bg-cyan">
+		<li class="layui-nav-item"><a href="">1</a></li>
+  		<li class="layui-nav-item layui-this"><a href="">2</a></li>
+  		<li class="layui-nav-item"><a href="">3</a></li>
+  		<li class="layui-nav-item">
+    		<a href="javascript:;">4</a>
+    		<dl class="layui-nav-child">
+      			<dd><a href="">41</a></dd>
+      			<dd><a href="">42</a></dd>
+    		</dl>
+  		</li>
+	</ul>
+</div>

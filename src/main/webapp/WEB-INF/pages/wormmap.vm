@@ -1,0 +1,55 @@
+#parse("/basic_model/header.vm")
+<link rel="stylesheet" href="/shanjian/resources/js/vis/vis-network.min.css" />
+<link rel="stylesheet" href="/shanjian/resources/css/wormmap.css" />
+
+<div id="node-popUp">
+  <span id="node-operation">node</span><br>
+  <table style="margin:auto;">
+    <tr>
+      <td>name-en:</td><td><input id="node-name-en" value="" /></td>
+    </tr>
+    <tr>
+      <td>name-cn:</td><td><input id="node-name-cn" value="" /></td>
+    </tr>
+    <tr>
+      <td>kb:</td><td><input id="node-kb" value="" /></td>
+    </tr>
+    <tr>
+      <td>aishen:</td><td><input id="node-aishen" value="" /></td>
+    </tr>
+    <tr>
+      <td>corp:</td><td><input id="node-corp" value="" /></td>
+    </tr>
+    <tr>
+      <td>eve-hunter:</td><td><input id="node-hunter" value="" /></td>
+    </tr>
+  </table>
+  <input type="button" value="save" id="node-saveButton" />
+  <input type="button" value="cancel" id="node-cancelButton" />
+</div>
+
+<div id="edge-popUp">
+  <span id="edge-operation">edge</span> <br>
+  <table style="margin:auto;">
+  	<tr><td>num:</td><td><input id="edge-label" value="new value" /></td></tr>
+  	<tr><td>quality:</td><td><input id="edge-label" value="new value" /></td></tr>
+  </table>   
+  <input type="button" value="save" id="edge-saveButton" />
+  <input type="button" value="cancel" id="edge-cancelButton" />
+</div>
+<div id="mynetwork"></div>
+<pre id="eventSpan"></pre>
+#parse("/basic_model/footer_js.vm")
+<script src="/shanjian/resources/js/vis/vis.js"></script>
+<script>
+	layui.use('element', function(){
+  		var element = layui.element;
+  
+  		element.on('nav(demo)', function(elem){
+    		//console.log(elem)
+    		layer.msg(elem.text());
+  		});
+	});
+</script>
+<script src="/shanjian/resources/js/wormmap.js"></script>
+#parse("/basic_model/footer.vm")

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/pages/basic_model/header.vm=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/wormmap.vm=UTF-8
+separateDerivedEncodings=true
